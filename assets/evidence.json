@@ -1,0 +1,2906 @@
+{
+  "schema_version": 1,
+  "authoritative_version": "Local published-format Tame3D manuscript, 11 pages, and matching source archive; selected by the authors for this website.",
+  "artifacts": {
+    "tame3d-paper.pdf": {
+      "sha256": "e66e44aaaca48f726befedd443e93642954e9d56b02864590a9642a45787e54c"
+    }
+  },
+  "counts_origin": "Private manuscript aggregate counts, retained locally by the authors and not published on this site.",
+  "source_notation": "raw_fields are JSON Pointers into the private manuscript aggregate counts. seed_index refers to the matching position in seeds. paper_locations.source paths identify private manuscript source files. Page numbers refer to the unchanged 11-page PDF.",
+  "numerical_sources": {
+    "test/Embodied/accuracy": {
+      "counts": "conditions.test.methods.Embodied",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Embodied/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.accuracy",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Embodied/coverage": {
+      "counts": "conditions.test.methods.Embodied",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Embodied/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.coverage",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Embodied/size": {
+      "counts": "conditions.test.methods.Embodied",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.size",
+      "seed_formula": "examples_per_summary / examples_per_summary",
+      "unit": "labels",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Embodied/answer": {
+      "counts": "conditions.test.methods.Embodied",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.answer",
+      "seed_formula": "100 * examples_per_summary / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Embodied/selective": {
+      "counts": "conditions.test.methods.Embodied",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Embodied/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.selective",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Embodied/joint_error": {
+      "counts": "conditions.test.methods.Embodied",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Embodied/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.joint_error",
+      "seed_formula": "100 * (examples_per_summary - forced_correct[seed_index]) / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6; Section 4.1, Compared methods and Metrics, p. 5",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Section 4.1, Compared methods and Metrics",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Derived from the initial-observation point-baseline protocol and forced-answer counts; not a row of Table 4.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Embodied/views": {
+      "counts": "conditions.test.methods.Embodied",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.views",
+      "seed_formula": "0 / examples_per_summary",
+      "unit": "observations per question",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6; Section 4.1, Compared methods and Metrics, p. 5",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Section 4.1, Compared methods and Metrics",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Derived from the initial-observation point-baseline protocol and forced-answer counts; not a row of Table 4.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Embodied/candidate_recall": {
+      "counts": "conditions.test.methods.Embodied",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/candidate_present",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.candidate_recall",
+      "seed_formula": "100 * candidate_present[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Section 4.1, candidate-generation protocol, p. 5; Appendix C, Geometry and randomness, p. 10",
+      "paper_locations": [
+        {
+          "label": "Section 4.1, candidate-generation protocol",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Appendix C, Geometry and randomness",
+          "page": 10,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The clean mean and sample SD are reported in Section 4.1; the shifted value is derived from the accompanying candidate_present counts. Candidate recall is shared by all methods.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Global/accuracy": {
+      "counts": "conditions.test.methods.Global",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Global/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.accuracy",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Global/coverage": {
+      "counts": "conditions.test.methods.Global",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Global/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.coverage",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Global/size": {
+      "counts": "conditions.test.methods.Global",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.size",
+      "seed_formula": "examples_per_summary / examples_per_summary",
+      "unit": "labels",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Global/answer": {
+      "counts": "conditions.test.methods.Global",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.answer",
+      "seed_formula": "100 * examples_per_summary / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Global/selective": {
+      "counts": "conditions.test.methods.Global",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Global/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.selective",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Global/joint_error": {
+      "counts": "conditions.test.methods.Global",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Global/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.joint_error",
+      "seed_formula": "100 * (examples_per_summary - forced_correct[seed_index]) / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6; Section 4.1, Compared methods and Metrics, p. 5",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Section 4.1, Compared methods and Metrics",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Derived from the initial-observation point-baseline protocol and forced-answer counts; not a row of Table 4.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Global/views": {
+      "counts": "conditions.test.methods.Global",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.views",
+      "seed_formula": "0 / examples_per_summary",
+      "unit": "observations per question",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6; Section 4.1, Compared methods and Metrics, p. 5",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Section 4.1, Compared methods and Metrics",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Derived from the initial-observation point-baseline protocol and forced-answer counts; not a row of Table 4.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Global/candidate_recall": {
+      "counts": "conditions.test.methods.Global",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/candidate_present",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.candidate_recall",
+      "seed_formula": "100 * candidate_present[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Section 4.1, candidate-generation protocol, p. 5; Appendix C, Geometry and randomness, p. 10",
+      "paper_locations": [
+        {
+          "label": "Section 4.1, candidate-generation protocol",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Appendix C, Geometry and randomness",
+          "page": 10,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The clean mean and sample SD are reported in Section 4.1; the shifted value is derived from the accompanying candidate_present counts. Candidate recall is shared by all methods.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Unscaled fusion/accuracy": {
+      "counts": "conditions.test.methods.Unscaled fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Unscaled fusion/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.accuracy",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Unscaled fusion/coverage": {
+      "counts": "conditions.test.methods.Unscaled fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Unscaled fusion/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.coverage",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Unscaled fusion/size": {
+      "counts": "conditions.test.methods.Unscaled fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.size",
+      "seed_formula": "examples_per_summary / examples_per_summary",
+      "unit": "labels",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Unscaled fusion/answer": {
+      "counts": "conditions.test.methods.Unscaled fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.answer",
+      "seed_formula": "100 * examples_per_summary / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Unscaled fusion/selective": {
+      "counts": "conditions.test.methods.Unscaled fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Unscaled fusion/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.selective",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Unscaled fusion/joint_error": {
+      "counts": "conditions.test.methods.Unscaled fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Unscaled fusion/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.joint_error",
+      "seed_formula": "100 * (examples_per_summary - forced_correct[seed_index]) / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6; Section 4.1, Compared methods and Metrics, p. 5",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Section 4.1, Compared methods and Metrics",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Derived from the initial-observation point-baseline protocol and forced-answer counts; not a row of Table 4.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Unscaled fusion/views": {
+      "counts": "conditions.test.methods.Unscaled fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.views",
+      "seed_formula": "0 / examples_per_summary",
+      "unit": "observations per question",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6; Section 4.1, Compared methods and Metrics, p. 5",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Section 4.1, Compared methods and Metrics",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Derived from the initial-observation point-baseline protocol and forced-answer counts; not a row of Table 4.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Unscaled fusion/candidate_recall": {
+      "counts": "conditions.test.methods.Unscaled fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/candidate_present",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.candidate_recall",
+      "seed_formula": "100 * candidate_present[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Section 4.1, candidate-generation protocol, p. 5; Appendix C, Geometry and randomness, p. 10",
+      "paper_locations": [
+        {
+          "label": "Section 4.1, candidate-generation protocol",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Appendix C, Geometry and randomness",
+          "page": 10,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The clean mean and sample SD are reported in Section 4.1; the shifted value is derived from the accompanying candidate_present counts. Candidate recall is shared by all methods.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Aligned fusion/accuracy": {
+      "counts": "conditions.test.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Aligned fusion/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.accuracy",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Aligned fusion/coverage": {
+      "counts": "conditions.test.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Aligned fusion/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.coverage",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Aligned fusion/size": {
+      "counts": "conditions.test.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.size",
+      "seed_formula": "examples_per_summary / examples_per_summary",
+      "unit": "labels",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Aligned fusion/answer": {
+      "counts": "conditions.test.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.answer",
+      "seed_formula": "100 * examples_per_summary / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Aligned fusion/selective": {
+      "counts": "conditions.test.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Aligned fusion/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.selective",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Aligned fusion/joint_error": {
+      "counts": "conditions.test.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Aligned fusion/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.joint_error",
+      "seed_formula": "100 * (examples_per_summary - forced_correct[seed_index]) / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6; Section 4.1, Compared methods and Metrics, p. 5",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Section 4.1, Compared methods and Metrics",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Derived from the initial-observation point-baseline protocol and forced-answer counts; not a row of Table 4.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Aligned fusion/views": {
+      "counts": "conditions.test.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.views",
+      "seed_formula": "0 / examples_per_summary",
+      "unit": "observations per question",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6; Section 4.1, Compared methods and Metrics, p. 5",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Section 4.1, Compared methods and Metrics",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Derived from the initial-observation point-baseline protocol and forced-answer counts; not a row of Table 4.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Aligned fusion/candidate_recall": {
+      "counts": "conditions.test.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/candidate_present",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.candidate_recall",
+      "seed_formula": "100 * candidate_present[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Section 4.1, candidate-generation protocol, p. 5; Appendix C, Geometry and randomness, p. 10",
+      "paper_locations": [
+        {
+          "label": "Section 4.1, candidate-generation protocol",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Appendix C, Geometry and randomness",
+          "page": 10,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The clean mean and sample SD are reported in Section 4.1; the shifted value is derived from the accompanying candidate_present counts. Candidate recall is shared by all methods.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "test/Conformal fixed (0)/accuracy": {
+      "counts": "conditions.test.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (0)/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.accuracy",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (0)/coverage": {
+      "counts": "conditions.test.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (0)/covered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.coverage",
+      "seed_formula": "100 * covered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (0)/size": {
+      "counts": "conditions.test.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (0)/set_size_total",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.size",
+      "seed_formula": "set_size_total[seed_index] / examples_per_summary",
+      "unit": "labels",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (0)/answer": {
+      "counts": "conditions.test.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (0)/answered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.answer",
+      "seed_formula": "100 * answered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (0)/selective": {
+      "counts": "conditions.test.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (0)/accepted_correct",
+        "/conditions/test/methods/Conformal fixed (0)/answered"
+      ],
+      "metric_definition": "results.json:metrics.selective",
+      "seed_formula": "100 * accepted_correct[seed_index] / answered[seed_index]",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (0)/joint_error": {
+      "counts": "conditions.test.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (0)/answered",
+        "/conditions/test/methods/Conformal fixed (0)/accepted_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.joint_error",
+      "seed_formula": "100 * (answered[seed_index] - accepted_correct[seed_index]) / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (0)/views": {
+      "counts": "conditions.test.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (0)/acquisition_total",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.views",
+      "seed_formula": "acquisition_total[seed_index] / examples_per_summary",
+      "unit": "observations per question",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (0)/candidate_recall": {
+      "counts": "conditions.test.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/candidate_present",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.candidate_recall",
+      "seed_formula": "100 * candidate_present[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Section 4.1, candidate-generation protocol, p. 5; Appendix C, Geometry and randomness, p. 10",
+      "paper_locations": [
+        {
+          "label": "Section 4.1, candidate-generation protocol",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Appendix C, Geometry and randomness",
+          "page": 10,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The clean mean and sample SD are reported in Section 4.1; the shifted value is derived from the accompanying candidate_present counts. Candidate recall is shared by all methods.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (2)/accuracy": {
+      "counts": "conditions.test.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (2)/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.accuracy",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (2)/coverage": {
+      "counts": "conditions.test.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (2)/covered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.coverage",
+      "seed_formula": "100 * covered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (2)/size": {
+      "counts": "conditions.test.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (2)/set_size_total",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.size",
+      "seed_formula": "set_size_total[seed_index] / examples_per_summary",
+      "unit": "labels",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (2)/answer": {
+      "counts": "conditions.test.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (2)/answered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.answer",
+      "seed_formula": "100 * answered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (2)/selective": {
+      "counts": "conditions.test.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (2)/accepted_correct",
+        "/conditions/test/methods/Conformal fixed (2)/answered"
+      ],
+      "metric_definition": "results.json:metrics.selective",
+      "seed_formula": "100 * accepted_correct[seed_index] / answered[seed_index]",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (2)/joint_error": {
+      "counts": "conditions.test.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (2)/answered",
+        "/conditions/test/methods/Conformal fixed (2)/accepted_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.joint_error",
+      "seed_formula": "100 * (answered[seed_index] - accepted_correct[seed_index]) / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (2)/views": {
+      "counts": "conditions.test.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Conformal fixed (2)/acquisition_total",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.views",
+      "seed_formula": "acquisition_total[seed_index] / examples_per_summary",
+      "unit": "observations per question",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Conformal fixed (2)/candidate_recall": {
+      "counts": "conditions.test.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/candidate_present",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.candidate_recall",
+      "seed_formula": "100 * candidate_present[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Section 4.1, candidate-generation protocol, p. 5; Appendix C, Geometry and randomness, p. 10",
+      "paper_locations": [
+        {
+          "label": "Section 4.1, candidate-generation protocol",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Appendix C, Geometry and randomness",
+          "page": 10,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The clean mean and sample SD are reported in Section 4.1; the shifted value is derived from the accompanying candidate_present counts. Candidate recall is shared by all methods.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "test/Adaptive aligned/accuracy": {
+      "counts": "conditions.test.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Adaptive aligned/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.accuracy",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "test/Adaptive aligned/coverage": {
+      "counts": "conditions.test.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Adaptive aligned/covered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.coverage",
+      "seed_formula": "100 * covered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "test/Adaptive aligned/size": {
+      "counts": "conditions.test.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Adaptive aligned/set_size_total",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.size",
+      "seed_formula": "set_size_total[seed_index] / examples_per_summary",
+      "unit": "labels",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "test/Adaptive aligned/answer": {
+      "counts": "conditions.test.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Adaptive aligned/answered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.answer",
+      "seed_formula": "100 * answered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "test/Adaptive aligned/selective": {
+      "counts": "conditions.test.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Adaptive aligned/accepted_correct",
+        "/conditions/test/methods/Adaptive aligned/answered"
+      ],
+      "metric_definition": "results.json:metrics.selective",
+      "seed_formula": "100 * accepted_correct[seed_index] / answered[seed_index]",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 1, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "test/Adaptive aligned/joint_error": {
+      "counts": "conditions.test.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Adaptive aligned/answered",
+        "/conditions/test/methods/Adaptive aligned/accepted_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.joint_error",
+      "seed_formula": "100 * (answered[seed_index] - accepted_correct[seed_index]) / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "test/Adaptive aligned/views": {
+      "counts": "conditions.test.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Adaptive aligned/acquisition_total",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.views",
+      "seed_formula": "acquisition_total[seed_index] / examples_per_summary",
+      "unit": "observations per question",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "test/Adaptive aligned/candidate_recall": {
+      "counts": "conditions.test.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/candidate_present",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.candidate_recall",
+      "seed_formula": "100 * candidate_present[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Section 4.1, candidate-generation protocol, p. 5; Appendix C, Geometry and randomness, p. 10",
+      "paper_locations": [
+        {
+          "label": "Section 4.1, candidate-generation protocol",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Appendix C, Geometry and randomness",
+          "page": 10,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The clean mean and sample SD are reported in Section 4.1; the shifted value is derived from the accompanying candidate_present counts. Candidate recall is shared by all methods.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "test/Adaptive aligned/simultaneous": {
+      "counts": "conditions.test.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Adaptive aligned/simultaneous_covered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.simultaneous",
+      "seed_formula": "100 * simultaneous_covered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Additional results after Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Additional results after Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The mean is reported in Appendix C; the sample SD is derived from the accompanying per-seed counts.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "test/Adaptive aligned/count": {
+      "counts": "conditions.test.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Adaptive aligned/type_correct",
+        "/conditions/test/question_counts"
+      ],
+      "metric_definition": "results.json:metrics.count",
+      "seed_formula": "100 * type_correct[seed_index][0] / question_counts[seed_index][0]",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Additional results after Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Additional results after Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The mean is reported in Appendix C; the sample SD is derived from the accompanying per-seed counts.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "test/Adaptive aligned/direction": {
+      "counts": "conditions.test.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Adaptive aligned/type_correct",
+        "/conditions/test/question_counts"
+      ],
+      "metric_definition": "results.json:metrics.direction",
+      "seed_formula": "100 * type_correct[seed_index][1] / question_counts[seed_index][1]",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Additional results after Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Additional results after Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The mean is reported in Appendix C; the sample SD is derived from the accompanying per-seed counts.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "test/Adaptive aligned/nearest": {
+      "counts": "conditions.test.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/test/methods/Adaptive aligned/type_correct",
+        "/conditions/test/question_counts"
+      ],
+      "metric_definition": "results.json:metrics.nearest",
+      "seed_formula": "100 * type_correct[seed_index][2] / question_counts[seed_index][2]",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Additional results after Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Additional results after Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The mean is reported in Appendix C; the sample SD is derived from the accompanying per-seed counts.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "shift/Aligned fusion/accuracy": {
+      "counts": "conditions.shift.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Aligned fusion/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.accuracy",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "shift/Aligned fusion/coverage": {
+      "counts": "conditions.shift.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Aligned fusion/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.coverage",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "shift/Aligned fusion/size": {
+      "counts": "conditions.shift.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.size",
+      "seed_formula": "examples_per_summary / examples_per_summary",
+      "unit": "labels",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "shift/Aligned fusion/answer": {
+      "counts": "conditions.shift.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.answer",
+      "seed_formula": "100 * examples_per_summary / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "shift/Aligned fusion/selective": {
+      "counts": "conditions.shift.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Aligned fusion/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.selective",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "shift/Aligned fusion/joint_error": {
+      "counts": "conditions.shift.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Aligned fusion/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.joint_error",
+      "seed_formula": "100 * (examples_per_summary - forced_correct[seed_index]) / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6; Section 4.1, Compared methods and Metrics, p. 5",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Section 4.1, Compared methods and Metrics",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Derived from the initial-observation point-baseline protocol and forced-answer counts; not a row of Table 4.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "shift/Aligned fusion/views": {
+      "counts": "conditions.shift.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.views",
+      "seed_formula": "0 / examples_per_summary",
+      "unit": "observations per question",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6; Section 4.1, Compared methods and Metrics, p. 5",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Section 4.1, Compared methods and Metrics",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Derived from the initial-observation point-baseline protocol and forced-answer counts; not a row of Table 4.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "shift/Aligned fusion/candidate_recall": {
+      "counts": "conditions.shift.methods.Aligned fusion",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/candidate_present",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.candidate_recall",
+      "seed_formula": "100 * candidate_present[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Section 4.1, candidate-generation protocol, p. 5; Appendix C, Geometry and randomness, p. 10",
+      "paper_locations": [
+        {
+          "label": "Section 4.1, candidate-generation protocol",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Appendix C, Geometry and randomness",
+          "page": 10,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The clean mean and sample SD are reported in Section 4.1; the shifted value is derived from the accompanying candidate_present counts. Candidate recall is shared by all methods.",
+      "evaluation_protocol": "Section 4.1 represents every point prediction as an ordinary singleton: covered = accepted_correct = forced_correct; answered = set_size_total = examples_per_summary; acquisition_total = 0. These defaults are protocol-derived, not missing raw measurements."
+    },
+    "shift/Conformal fixed (0)/accuracy": {
+      "counts": "conditions.shift.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (0)/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.accuracy",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (0)/coverage": {
+      "counts": "conditions.shift.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (0)/covered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.coverage",
+      "seed_formula": "100 * covered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (0)/size": {
+      "counts": "conditions.shift.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (0)/set_size_total",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.size",
+      "seed_formula": "set_size_total[seed_index] / examples_per_summary",
+      "unit": "labels",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (0)/answer": {
+      "counts": "conditions.shift.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (0)/answered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.answer",
+      "seed_formula": "100 * answered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (0)/selective": {
+      "counts": "conditions.shift.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (0)/accepted_correct",
+        "/conditions/shift/methods/Conformal fixed (0)/answered"
+      ],
+      "metric_definition": "results.json:metrics.selective",
+      "seed_formula": "100 * accepted_correct[seed_index] / answered[seed_index]",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (0)/joint_error": {
+      "counts": "conditions.shift.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (0)/answered",
+        "/conditions/shift/methods/Conformal fixed (0)/accepted_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.joint_error",
+      "seed_formula": "100 * (answered[seed_index] - accepted_correct[seed_index]) / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (0)/views": {
+      "counts": "conditions.shift.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (0)/acquisition_total",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.views",
+      "seed_formula": "acquisition_total[seed_index] / examples_per_summary",
+      "unit": "observations per question",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (0)/candidate_recall": {
+      "counts": "conditions.shift.methods.Conformal fixed (0)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/candidate_present",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.candidate_recall",
+      "seed_formula": "100 * candidate_present[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Section 4.1, candidate-generation protocol, p. 5; Appendix C, Geometry and randomness, p. 10",
+      "paper_locations": [
+        {
+          "label": "Section 4.1, candidate-generation protocol",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Appendix C, Geometry and randomness",
+          "page": 10,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The clean mean and sample SD are reported in Section 4.1; the shifted value is derived from the accompanying candidate_present counts. Candidate recall is shared by all methods.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (2)/accuracy": {
+      "counts": "conditions.shift.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (2)/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.accuracy",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (2)/coverage": {
+      "counts": "conditions.shift.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (2)/covered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.coverage",
+      "seed_formula": "100 * covered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (2)/size": {
+      "counts": "conditions.shift.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (2)/set_size_total",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.size",
+      "seed_formula": "set_size_total[seed_index] / examples_per_summary",
+      "unit": "labels",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (2)/answer": {
+      "counts": "conditions.shift.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (2)/answered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.answer",
+      "seed_formula": "100 * answered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (2)/selective": {
+      "counts": "conditions.shift.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (2)/accepted_correct",
+        "/conditions/shift/methods/Conformal fixed (2)/answered"
+      ],
+      "metric_definition": "results.json:metrics.selective",
+      "seed_formula": "100 * accepted_correct[seed_index] / answered[seed_index]",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (2)/joint_error": {
+      "counts": "conditions.shift.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (2)/answered",
+        "/conditions/shift/methods/Conformal fixed (2)/accepted_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.joint_error",
+      "seed_formula": "100 * (answered[seed_index] - accepted_correct[seed_index]) / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (2)/views": {
+      "counts": "conditions.shift.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Conformal fixed (2)/acquisition_total",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.views",
+      "seed_formula": "acquisition_total[seed_index] / examples_per_summary",
+      "unit": "observations per question",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Conformal fixed (2)/candidate_recall": {
+      "counts": "conditions.shift.methods.Conformal fixed (2)",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/candidate_present",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.candidate_recall",
+      "seed_formula": "100 * candidate_present[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Section 4.1, candidate-generation protocol, p. 5; Appendix C, Geometry and randomness, p. 10",
+      "paper_locations": [
+        {
+          "label": "Section 4.1, candidate-generation protocol",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Appendix C, Geometry and randomness",
+          "page": 10,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The clean mean and sample SD are reported in Section 4.1; the shifted value is derived from the accompanying candidate_present counts. Candidate recall is shared by all methods.",
+      "evaluation_protocol": "Fixed-round values use the declared round."
+    },
+    "shift/Adaptive aligned/accuracy": {
+      "counts": "conditions.shift.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Adaptive aligned/forced_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.accuracy",
+      "seed_formula": "100 * forced_correct[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "shift/Adaptive aligned/coverage": {
+      "counts": "conditions.shift.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Adaptive aligned/covered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.coverage",
+      "seed_formula": "100 * covered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "shift/Adaptive aligned/size": {
+      "counts": "conditions.shift.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Adaptive aligned/set_size_total",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.size",
+      "seed_formula": "set_size_total[seed_index] / examples_per_summary",
+      "unit": "labels",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "shift/Adaptive aligned/answer": {
+      "counts": "conditions.shift.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Adaptive aligned/answered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.answer",
+      "seed_formula": "100 * answered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "shift/Adaptive aligned/selective": {
+      "counts": "conditions.shift.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Adaptive aligned/accepted_correct",
+        "/conditions/shift/methods/Adaptive aligned/answered"
+      ],
+      "metric_definition": "results.json:metrics.selective",
+      "seed_formula": "100 * accepted_correct[seed_index] / answered[seed_index]",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Table 2, p. 6",
+      "paper_locations": [
+        {
+          "label": "Table 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "shift/Adaptive aligned/joint_error": {
+      "counts": "conditions.shift.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Adaptive aligned/answered",
+        "/conditions/shift/methods/Adaptive aligned/accepted_correct",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.joint_error",
+      "seed_formula": "100 * (answered[seed_index] - accepted_correct[seed_index]) / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "shift/Adaptive aligned/views": {
+      "counts": "conditions.shift.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Adaptive aligned/acquisition_total",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.views",
+      "seed_formula": "acquisition_total[seed_index] / examples_per_summary",
+      "unit": "observations per question",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "Reported in the manuscript table.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "shift/Adaptive aligned/candidate_recall": {
+      "counts": "conditions.shift.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/candidate_present",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.candidate_recall",
+      "seed_formula": "100 * candidate_present[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Section 4.1, candidate-generation protocol, p. 5; Appendix C, Geometry and randomness, p. 10",
+      "paper_locations": [
+        {
+          "label": "Section 4.1, candidate-generation protocol",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Appendix C, Geometry and randomness",
+          "page": 10,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The clean mean and sample SD are reported in Section 4.1; the shifted value is derived from the accompanying candidate_present counts. Candidate recall is shared by all methods.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "shift/Adaptive aligned/simultaneous": {
+      "counts": "conditions.shift.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Adaptive aligned/simultaneous_covered",
+        "/examples_per_summary"
+      ],
+      "metric_definition": "results.json:metrics.simultaneous",
+      "seed_formula": "100 * simultaneous_covered[seed_index] / examples_per_summary",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Additional results after Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Additional results after Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The mean is reported in Appendix C; the sample SD is derived from the accompanying per-seed counts.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "shift/Adaptive aligned/count": {
+      "counts": "conditions.shift.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Adaptive aligned/type_correct",
+        "/conditions/shift/question_counts"
+      ],
+      "metric_definition": "results.json:metrics.count",
+      "seed_formula": "100 * type_correct[seed_index][0] / question_counts[seed_index][0]",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Additional results after Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Additional results after Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The mean is reported in Appendix C; the sample SD is derived from the accompanying per-seed counts.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "shift/Adaptive aligned/direction": {
+      "counts": "conditions.shift.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Adaptive aligned/type_correct",
+        "/conditions/shift/question_counts"
+      ],
+      "metric_definition": "results.json:metrics.direction",
+      "seed_formula": "100 * type_correct[seed_index][1] / question_counts[seed_index][1]",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Additional results after Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Additional results after Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The mean is reported in Appendix C; the sample SD is derived from the accompanying per-seed counts.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    },
+    "shift/Adaptive aligned/nearest": {
+      "counts": "conditions.shift.methods.Adaptive aligned",
+      "raw_file": "private manuscript aggregate counts",
+      "raw_fields": [
+        "/conditions/shift/methods/Adaptive aligned/type_correct",
+        "/conditions/shift/question_counts"
+      ],
+      "metric_definition": "results.json:metrics.nearest",
+      "seed_formula": "100 * type_correct[seed_index][2] / question_counts[seed_index][2]",
+      "unit": "%",
+      "aggregation": {
+        "mean": "sum(per_seed_values) / number_of_seeds",
+        "std": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+        "std_ddof": 1,
+        "uncertainty": "Sample standard deviation across seeds, not a confidence interval.",
+        "seed_index": "Array index in seeds; no pooling across seeds before calculating a metric."
+      },
+      "paper_location": "Appendix C, Additional results after Table 4, p. 11",
+      "paper_locations": [
+        {
+          "label": "Appendix C, Additional results after Table 4",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ],
+      "reporting": "The mean is reported in Appendix C; the sample SD is derived from the accompanying per-seed counts.",
+      "evaluation_protocol": "Adaptive values use the first accepted round, or round 2 after abstention."
+    }
+  },
+  "derived_formulas": {
+    "alignment_gain_pp": "test.Aligned fusion.accuracy.mean - test.Unscaled fusion.accuracy.mean",
+    "acquisition_saving_percent": "100 * (1 - test.Adaptive aligned.views.mean / test.Conformal fixed (2).views.mean)",
+    "coverage_drop_pp": "test.Adaptive aligned.coverage.mean - shift.Adaptive aligned.coverage.mean"
+  },
+  "derived_sources": {
+    "alignment_gain_pp": {
+      "unit": "percentage points",
+      "inputs": [
+        "test/Aligned fusion/accuracy",
+        "test/Unscaled fusion/accuracy"
+      ],
+      "paper_locations": [
+        {
+          "label": "Abstract",
+          "page": 1,
+          "source": "iclr2025_conference.tex"
+        },
+        {
+          "label": "Section 4.2",
+          "page": 5,
+          "source": "sections/experiments.tex"
+        },
+        {
+          "label": "Table 1",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ]
+    },
+    "acquisition_saving_percent": {
+      "unit": "%",
+      "inputs": [
+        "test/Adaptive aligned/views",
+        "test/Conformal fixed (2)/views"
+      ],
+      "paper_locations": [
+        {
+          "label": "Abstract",
+          "page": 1,
+          "source": "iclr2025_conference.tex"
+        },
+        {
+          "label": "Appendix C, Table 4 and Metric aggregation",
+          "page": 11,
+          "source": "sections/appendix.tex"
+        }
+      ]
+    },
+    "coverage_drop_pp": {
+      "unit": "percentage points",
+      "inputs": [
+        "test/Adaptive aligned/coverage",
+        "shift/Adaptive aligned/coverage"
+      ],
+      "paper_locations": [
+        {
+          "label": "Section 4.3 and Tables 1 and 2",
+          "page": 6,
+          "source": "sections/experiments.tex"
+        }
+      ]
+    }
+  },
+  "derived_aggregation": "All differences and savings use unrounded means. Joint error is computed within each seed directly from counts; multiplying separately averaged answer rate and error among answered questions is not used.",
+  "study_metadata": {
+    "seeds": {
+      "value": [
+        17,
+        29,
+        43,
+        71,
+        101
+      ],
+      "raw_fields": [
+        "/seeds"
+      ],
+      "paper_location": "Appendix C, Geometry and randomness, p. 10"
+    },
+    "split_sizes_per_seed": {
+      "value": {
+        "development": 400,
+        "calibration": 600,
+        "test": 1000,
+        "shift": 1000
+      },
+      "paper_location": "Section 4.1, p. 5"
+    },
+    "questions_per_scene": {
+      "value": 1,
+      "paper_location": "Section 4.1, p. 5; Appendix C, p. 10"
+    },
+    "sample_sd": {
+      "formula": "sqrt(sum((value - mean) ** 2) / (number_of_seeds - 1))",
+      "ddof": 1,
+      "paper_location": "Appendix C, Metric aggregation, p. 11"
+    }
+  },
+  "non_results": {
+    "scene": "Constructed illustration of Appendix B: chair (-1,2,0), table (1,2,0), observer at origin and R=I.",
+    "controller": "Constructed set-membership examples implementing Section 3.4, not recorded model outputs or measured confidence scores."
+  },
+  "limits": [
+    "Aggregate-statistic verification does not reproduce the simulation.",
+    "The source archive does not include simulator or per-scene predictions.",
+    "The experiments evaluate synthetic geometric estimators, not a complete foundation-model system or SQA3D benchmark.",
+    "Risk guarantee requires exchangeable scene blocks and all development choices frozen before calibration.",
+    "Adaptive versus final fixed-round results differ in both stopping and risk allocation."
+  ]
+}
